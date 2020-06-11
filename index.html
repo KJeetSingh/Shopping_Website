@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css_f_home.css" type="text/css" rel="stylesheet" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+            
+                $("document").ready(function(){
+                    
+                    $("#frame").load("Header.jsp");
+                    
+                });
+             
+                        
+            
+        </script>        
+        
+    </head>
+    <body id="body" >
+          
+          
+<div id="frame"  ></div>        
+        
+<div id="container">
+<div style="background-image: url(bg2.png);height:350px;box-shadow:0px 0px 5px #A193CF; width:1350px;background-size:cover;margin-top:40px;margin-right:-5px;float:right"></div>
+<img  id="front1" src="front1.jpg" /><img id="front2" src="front2.jpg" />
+
+ <p id="pp" style="position:absolute;top:160px;left:720px;font-family:Comic Sans MS;font-size:40px;color:white">What are you looking for</p>
+  
+    <div id="search-box" class="col-xs-6 col-md-4" style="position:absolute; top:250px; left:750px;">
+      <div class="input-group" >
+        <input type="text" class="form-control" placeholder="Search" id="txtSearch" style="height:40px" />
+        <div class="input-group-btn">
+          <button class="btn btn-primary" type="submit" onclick="navigate()" style="height:40px">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+
+</div>
+ 
+        
+        
+        
+        <footer>
+        <pre style="color:black" >
+Creator: Kawaljeet Singh
+Contact: +91 0987654321                 
+Description: This demo shopping web application facilitates users to choose among different variety of  products related to clothing.
+             On every product page there are filters to get the products according to the brand name or by the price range under which they
+             want the product. A add-to-cart feature is added to make the product buying more easy.</pre>
+            
+            
+        </footer>     
+<script>
+    function navigate(){
+              var page = document.getElementById("txtSearch").value; 
+              var shoes=new RegExp(/shoe/i);
+              var shirts=new RegExp(/shirt/i);
+              var glasses=new RegExp(/glass/i);
+              var r_shoes=shoes.test(page);
+              var r_shirts=shirts.test(page);
+              var r_glasses=glasses.test(page);
+                   if(r_shoes){window.location.replace("Shoes.jsp");}
+                   if(r_shirts){window.location.replace("Shirts.jsp");}
+                   if(r_glasses){window.location.replace("SunGlasses.jsp");}
+                       }
+</script>
+    </body>
+</html>

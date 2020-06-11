@@ -1,0 +1,58 @@
+<!Doctype HTML>
+<html>  
+<head>  
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+            
+                $("document").ready(function(){
+                    
+                    $("#frame").load("Header.jsp");
+                    
+                });
+             
+                        
+            
+        </script>  
+</head>  
+<body>  
+    <div  id="frame" style="z-index: 1;background:white;text-align:left;height:80px;width:100%;box-shadow:0px 4px 2px gray;position:fixed;"></div>
+ <form action="ManageServlet" enctype="multipart/form-data" method="post" style="width:50%;position: absolute;top:100px;left:280px">
+     <select class="browser-default custome-select" name="options">
+         <option selected>Choose the Product</option>
+         <option value="shoes">Shoes</option>
+         <option value="shirts">Shirts</option>
+         <option value="SunGlasses">Sun Glasses</option>
+     </select><br>
+    <label for="p_name">Product Name</label>
+    <input type="text" class="form-control" id="name" name="name" size="50">
+  
+    <label for="p_price">Product Price</label>
+    <input type="number" class="form-control" id="price" name="price" size="50"> 
+  
+    <label for="p_description">Product Description</label>
+    <input type="text" class="form-control" id="desc" name="desc" size="50">
+  
+    <label for="p_stock">Product Stock</label>
+    <input type="number" class="form-control" id="stock" name="stock" size="50">
+    
+    <label for="p-image">Product Image</label>
+    <input type="file" class="form-control" id="file" size="50" name="file">
+    
+     <input type="submit" class="btn btn-default">
+</form>
+   
+     
+        <footer>
+        <pre style="background-color:gray;position:absolute;bottom:0px;width:100%" >
+Creator: Kawaljeet Singh
+Contact: +91 0987654321                 
+Description: This demo shopping web application facilitates users to choose among different variety of  products related to clothing.
+             On every product page there are filters to get the products according to the brand name or by the price range under which they
+             want the product. A add-to-cart feature is added to make the product buying more easy.</pre>
+            
+            
+        </footer>
+</body>  
+</html>  

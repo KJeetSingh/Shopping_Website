@@ -1,0 +1,18 @@
+#body{height:100%;width:1344px;padding:1px}
+#frame:hover{}
+#frame{background:white;text-align:left;height:80px;width:100%;box-shadow:0px 4px 2px purple;}
+#container{height:500px;width:100%;}
+#front1{height:250px;width:300px; position:absolute;top:170px;left:0px;transform: skewY(-10deg);transform: skewX(10deg);box-shadow: -5px 10px gray;animation-name: front1;animation-duration: 1s; }
+#front1:hover{box-shadow: -5px 10px 5px #01DFD7}
+@keyframes front1{
+  from {left:-50px}
+  to {left:0px}
+}
+#front2{height:250px;width:300px;position:absolute;left:300px; top:170px;  transform: skewY(4deg);box-shadow: -5px 7px gray;animation-name: front2;animation-duration: 1s; }
+#front2:hover{box-shadow: -5px 10px 5px white}
+@keyframes front2{
+  from {left:-50px}
+  to {left:300px}
+}
+
+footer{background:darkblue;width:100%;text-align:left ;position:relative;box-shadow:0px -4px 2px purple;}
